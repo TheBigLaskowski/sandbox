@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- meta tags below force browser to use latest rendering engine and sets the page width to device size with a zoom level of 1 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+    <title>Bootstrap Tutorial</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style media="screen">
+        .jumbotron {
+            background-color: #2E2D88;
+            color: white;
+        }
+        /* Adds borders for tabs */
+
+        .tab-content {
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .nav-tabs {
+            margin-bottom: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- container class adds a border / container-fluid -->
+    <div class="container">
+        <!-- page header notes -->
+        <div class="page-header">
+            <h1>Bootstrap Tutorial</h1>
+        </div>
+        <!-- jumbotron notes -->
+        <div class="jumbotron">
+            <p>Buttons in a Purple Bootstrap Jumbotron.</p>
+            <p>
+                <a href="#" class="btn btn-default btn-lg" role="button">More Info</a>
+                <button type="submit" class="btn btn-danger" role="button">Button</button>
+
+                <input type="button" value="Info" class="btn btn-info">
+                <button type="submit" class="btn-primary btn-sm">Primary</button>
+                <button type="submit" class="btn btn-success btn-xs">Success</button>
+                <button type="submit" class="btn btn-warning btn-lg">Warning</button>
+                <button type="submit" class="btn btn-link btn-lg">Link</button>
+
+                <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Disabled</button>
+
+                <!-- code for button links -->
+                <a href="#" class="btn btn-default btn-lg" role="button">Link</a>
+                <a href="#" class="btn btn-default btn-lg disabled" role="button">Disabled Link</a>
+
+                <!-- grouped buttons -->
+
+                <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-default">Small</button>
+                    <button type="button" class="btn btn-default">Meduim</button>
+                    <button type="button" class="btn btn-default">Large</button>
+
+                </div>
+
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <div>
+            <h3>Same Size Columns</h3>
+        </div>
+
+        <!-- rows and columns are layed out in 12 spaces, specify how many rows your colmun size needs, ensure the size totals 12 rows -->
+
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <h4>Column 1</h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id mi efficitur, tempor turpis vel, bibendum nulla. Nulla luctus purus in ultrices convallis. Aenean in augue tempus, malesuada magna non, porttitor eros. Integer porttitor
+                est eu dapibus mollis. Phasellus sed semper nisl. Ut eros erat, facilisis interdum lacinia at, congue iaculis elit. Aenean pretium accumsan consectetur. Curabitur porttitor diam sed gravida vulputate.
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <h4>Column 2</h4> Etiam odio nibh, tristique non sodales sed, dictum malesuada ipsum. Nullam mi lectus, posuere eu sollicitudin non, luctus ac orci. Etiam quis lorem vel tortor mollis pulvinar et sit amet sem. Mauris in porttitor justo, sit amet facilisis
+                nisl. Etiam suscipit elementum dolor, id luctus metus. Phasellus porttitor massa non purus cursus sodales.
+
+            </div>
+
+            <!-- clearfix a div to correct uneven columns by specifiying the column size that is effected -->
+            <div class="clearfix visible-sm"></div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <h4>Column 3</h4> Curabitur rutrum vestibulum convallis. Nam tristique tincidunt elit et commodo. Ut vestibulum rutrum egestas. Ut mattis semper bibendum. Nunc porta sodales mollis. Proin maximus leo eu ipsum vestibulum vehicula. Nullam suscipit consequat
+                massa, quis porta felis pellentesque non. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <h4>Column 4</h4> Donec non mi a magna vehicula condimentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus ac vulputate lacus. Maecenas est risus, posuere quis odio sit amet, placerat tincidunt enim. Class
+                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="well-lg">
+
+    </div>
+
+    <div class="container">
+
+        <div>
+            <h3>Different Size Columns</h3>
+        </div>
+
+        <!-- rows and columns are layed out in 12 spaces, specify how many rows your colmun size needs, ensure the size totals 12 rows -->
+
+        <div class="row">
+
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                <h4><a href="col1Content" data-toggle="collapse">Column 1</a></h4>
+
+                <div id="col1Content" class="collapse in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id mi efficitur, tempor turpis vel, bibendum nulla. Nulla luctus purus in ultrices convallis. Aenean in augue tempus, malesuada magna non, porttitor eros. Integer porttitor
+                    est eu dapibus mollis. Phasellus sed semper nisl. Ut eros erat, facilisis interdum lacinia at, congue iaculis elit. Aenean pretium accumsan consectetur. Curabitur porttitor diam sed gravida vulputate.
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+<!-- tutorial found @ https://youtu.be/gqOEoUR5RHg -->
